@@ -4,14 +4,13 @@
 #
 Name     : pypi-aiosmtpd
 Version  : 1.4.2
-Release  : 2
+Release  : 3
 URL      : https://files.pythonhosted.org/packages/ff/69/011cee7fe1332f749dac4e65cbc64b3e1a2984d9a7bae9257b1a5e671d01/aiosmtpd-1.4.2.tar.gz
 Source0  : https://files.pythonhosted.org/packages/ff/69/011cee7fe1332f749dac4e65cbc64b3e1a2984d9a7bae9257b1a5e671d01/aiosmtpd-1.4.2.tar.gz
 Summary  : aiosmtpd - asyncio based SMTP server
 Group    : Development/Tools
 License  : Apache-2.0
 Requires: pypi-aiosmtpd-bin = %{version}-%{release}
-Requires: pypi-aiosmtpd-filemap = %{version}-%{release}
 Requires: pypi-aiosmtpd-license = %{version}-%{release}
 Requires: pypi-aiosmtpd-python = %{version}-%{release}
 Requires: pypi-aiosmtpd-python3 = %{version}-%{release}
@@ -39,18 +38,9 @@ aiosmtpd - asyncio based SMTP server
 Summary: bin components for the pypi-aiosmtpd package.
 Group: Binaries
 Requires: pypi-aiosmtpd-license = %{version}-%{release}
-Requires: pypi-aiosmtpd-filemap = %{version}-%{release}
 
 %description bin
 bin components for the pypi-aiosmtpd package.
-
-
-%package filemap
-Summary: filemap components for the pypi-aiosmtpd package.
-Group: Default
-
-%description filemap
-filemap components for the pypi-aiosmtpd package.
 
 
 %package license
@@ -73,7 +63,6 @@ python components for the pypi-aiosmtpd package.
 %package python3
 Summary: python3 components for the pypi-aiosmtpd package.
 Group: Default
-Requires: pypi-aiosmtpd-filemap = %{version}-%{release}
 Requires: python3-core
 Provides: pypi(aiosmtpd)
 Requires: pypi(atpublic)
@@ -95,7 +84,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1652992560
+export SOURCE_DATE_EPOCH=1652994552
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -141,10 +130,6 @@ popd
 %files bin
 %defattr(-,root,root,-)
 /usr/bin/aiosmtpd
-
-%files filemap
-%defattr(-,root,root,-)
-/usr/share/clear/filemap/filemap-pypi-aiosmtpd
 
 %files license
 %defattr(0644,root,root,0755)
