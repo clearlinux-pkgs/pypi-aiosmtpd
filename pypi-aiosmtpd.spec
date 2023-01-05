@@ -4,7 +4,7 @@
 #
 Name     : pypi-aiosmtpd
 Version  : 1.4.3
-Release  : 14
+Release  : 15
 URL      : https://files.pythonhosted.org/packages/db/82/e6ba8b3cff0b33ed2f2b3e4c1a1303cd474c2a436fd1dbe50483eff4b7f0/aiosmtpd-1.4.3.tar.gz
 Source0  : https://files.pythonhosted.org/packages/db/82/e6ba8b3cff0b33ed2f2b3e4c1a1303cd474c2a436fd1dbe50483eff4b7f0/aiosmtpd-1.4.3.tar.gz
 Summary  : aiosmtpd - asyncio based SMTP server
