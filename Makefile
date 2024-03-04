@@ -1,5 +1,5 @@
 PKG_NAME := pypi-aiosmtpd
-URL = https://files.pythonhosted.org/packages/10/c0/6bcf406e244ddbd83bbde5d3e009f2a2e8e5872883e229e30e2d307afa2c/aiosmtpd-1.4.4.post2.tar.gz
+URL = https://files.pythonhosted.org/packages/da/30/ec2e28136fecc7802849bf117857db980a014a01b75bbead312dd1942d84/aiosmtpd-1.4.5.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
